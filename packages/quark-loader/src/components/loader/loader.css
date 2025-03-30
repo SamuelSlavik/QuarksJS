@@ -1,75 +1,15 @@
-.loader-quark {
+.quark-loader {
+    box-sizing: border-box;
+
     color: inherit;
     background-color: transparent;
-    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
 }
 
-/* ------------------------------- POSITIONS ------------------------------- */
-.loader-quark--top {
-    position: absolute;
-    top: 1rem;
-    bottom: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    right: auto;
-}
-.loader-quark--top-right {
-    position: absolute;
-    top: 1rem;
-    bottom: auto;
-    right: 1rem;
-    left: auto;
-}
-.loader-quark--top-left {
-    position: absolute;
-    top: 1rem;
-    bottom: auto;
-    left: 1rem;
-    right: auto;
-}
-.loader-quark--bottom {
-    position: absolute;
-    bottom: 1rem;
-    top: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    right: auto;
-}
-.loader-quark--bottom-right {
-    position: absolute;
-    bottom: 1rem;
-    top: auto;
-    right: 1rem;
-    left: auto;
-}
-.loader-quark--bottom-left {
-    position: absolute;
-    bottom: 1rem;
-    top: auto;
-    left: 1rem;
-    right: auto;
-}
-.loader-quark--left {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    right: auto;
-}
-.loader-quark--right {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    left: auto;
-}
-
-
-
 /* --------------------------------- TYPES --------------------------------- */
-.loader-quark--spinner {
+.quark-loader--spinner {
     width: 2rem;
     padding: 0.3rem;
     aspect-ratio: 1;
@@ -85,7 +25,7 @@
     animation: spinner 1s infinite linear;
 }
 
-.loader-quark--spinner-1 {
+.quark-loader--spinner-1 {
     width: 2rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -96,7 +36,7 @@
     animation: spinner 1s infinite linear;
 }
 
-.loader-quark--spinner-2 {
+.quark-loader--spinner-2 {
     width: 2rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -105,7 +45,7 @@
     animation: spinner2 1s infinite;
 }
 
-.loader-quark--spinner-3 {
+.quark-loader--spinner-3 {
     width: 2rem;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -115,33 +55,33 @@
             spinner3-2 1.6s infinite linear;
 }
 
-.loader-quark--spinner-4 {
+.quark-loader--spinner-4 {
     width: 2rem;
     aspect-ratio: 1;
     display:grid;
     -webkit-mask: conic-gradient(from 15deg, transparent, var(--primaryColor));
     animation: spinner4 1s infinite steps(12);
 }
-.loader-quark--spinner-4,
-.loader-quark--spinner-4:before,
-.loader-quark--spinner-4:after{
+.quark-loader--spinner-4,
+.quark-loader--spinner-4:before,
+.quark-loader--spinner-4:after{
     background:
             radial-gradient(closest-side at 50% 12.5%,
             var(--primaryColor) 96%, transparent) 50% 0/20% 80% repeat-y,
             radial-gradient(closest-side at 12.5% 50%,
             var(--primaryColor) 96%, transparent) 0 50%/80% 20% repeat-x;
 }
-.loader-quark--spinner-4:before,
-.loader-quark--spinner-4:after {
+.quark-loader--spinner-4:before,
+.quark-loader--spinner-4:after {
     content: "";
     grid-area: 1/1;
     transform: rotate(30deg);
 }
-.loader-quark--spinner-4:after {
+.quark-loader--spinner-4:after {
     transform: rotate(60deg);
 }
 
-.loader-quark--dots {
+.quark-loader--dots {
     width: 3rem;
     aspect-ratio: 4;
     --_g: no-repeat radial-gradient(circle closest-side, var(--primaryColor) 90%, transparent);
@@ -153,8 +93,7 @@
     animation: dots 1s infinite linear;
 }
 
-/* HTML: <div class="loader"></div> */
-.loader-quark--dots-2 {
+.quark-loader--dots-2 {
     height: 1.5rem;
     aspect-ratio: 2.5;
     --_g: no-repeat radial-gradient(farthest-side,var(--primaryColor) 90%, transparent);
@@ -163,7 +102,7 @@
     animation: dots2 1s infinite linear;
 }
 
-.loader-quark--line {
+.quark-loader--line {
     width: 2rem;
     aspect-ratio: 1;
     --c:no-repeat linear-gradient(var(--primaryColor) 0 0);
