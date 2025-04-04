@@ -6,6 +6,7 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const packageJson = require('./package.json');
 
 export default [

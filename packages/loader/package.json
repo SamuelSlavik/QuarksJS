@@ -1,13 +1,14 @@
 {
-  "name": "@quarks-js/quark-loader",
-  "version": "1.0.2",
+  "name": "@quarks-js/loader",
+  "version": "1.0.0",
   "description": "Simple Loader component for React Web Applications",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
-    "release": "npm publish --access public"
+    "release": "npm publish --access public",
+    "link": "npm link"
   },
   "author": "Samuel Slávik",
   "license": "ISC",

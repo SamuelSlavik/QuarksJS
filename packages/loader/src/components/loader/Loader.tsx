@@ -4,29 +4,26 @@ import './loader.css';
 export interface LoaderProps {
     loading?: boolean;
     type?: string;
-    primaryColor?: string;
-    secondaryColor?: string;
+    color?: string;
     children?: React.ReactNode;
 }
 
 export const Loader: React.FC<LoaderProps> = ({
     loading = false,
     type = 'spinner',
-    primaryColor = '#000000',
-    secondaryColor = '#ffffff',
+    color,
     children,
 }) => {
+    const style: React.CSSProperties = color
+        ? ({ '--color': color } as React.CSSProperties)
+        : {};
+
     return (
         <div>
             {loading ? (
                 <div
                     className={'quark-loader ' + 'quark-loader--' + type}
-                    style={
-                        {
-                            '--primaryColor': primaryColor,
-                            '--secondaryColor': secondaryColor,
-                        } as React.CSSProperties
-                    }
+                    style={style}
                 ></div>
             ) : (
                 children

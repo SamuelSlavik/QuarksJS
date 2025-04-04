@@ -7,7 +7,7 @@ This quark is a simple loader plugin with adaptation for React.
 ## Installation
 
 ```sh
-npm install @quarks-js/quark-loader --save
+npm install @quarks-js/loader --save
 ```
 
 <br/>
@@ -15,7 +15,7 @@ npm install @quarks-js/quark-loader --save
 ## Setup
 AnyComponent.jsx
 ```js
-import { Loader } from "@quarks-js/quark-loader"
+import { Loader } from "@quarks-js/loader"
 ```
 
 <br/>
@@ -24,7 +24,7 @@ import { Loader } from "@quarks-js/quark-loader"
 AnyComponent.jsx
 ```jsx
 import React from "react"
-import { Loader } from "@quarks-js/quark-loader"
+import { Loader } from "@quarks-js/loader"
 
 const AnyComponent = () => {
   const [loading, setLoading] = React.useState(false)
@@ -44,7 +44,7 @@ const AnyComponent = () => {
   
   return (
     <>
-      <Loader loading={loading} type="spinner" primaryColor="#7842f5">
+      <Loader loading={loading} type={"spinner"} color={"#7842f5"}>
         <div>
           {/* ...Content to show after loading is done... */}
         </div>  
@@ -58,10 +58,14 @@ export default AnyComponent
 
 <br/>
 
-## DOCS
-Full docs at [https://www.quarksjs.com/library/loader-quark-react/getting-started](https://www.quarksjs.com/library/loader-quark-react/getting-started).
+[//]: # (## DOCS)
 
-Source code at [https://github.com/SamuelSlavik/LoaderQuarkReact](https://github.com/SamuelSlavik/LoaderQuarkReact)
+[//]: # (Full docs at [https://www.quarksjs.com/library/loader-quark-react/getting-started]&#40;https://www.quarksjs.com/library/loader-quark-react/getting-started&#41;.)
 
-## SUPPORT
-Please support us by starring the repository or donate at [https://www.quarksjs.com/donate](https://www.quarksjs.com/donate) to help us maintain the project and cover hosting expenses.
+[//]: # ()
+[//]: # (Source code at [https://github.com/SamuelSlavik/LoaderQuarkReact]&#40;https://github.com/SamuelSlavik/LoaderQuarkReact&#41;)
+
+[//]: # ()
+[//]: # (## SUPPORT)
+
+[//]: # (Please support us by starring the repository or donate at [https://www.quarksjs.com/donate]&#40;https://www.quarksjs.com/donate&#41; to help us maintain the project and cover hosting expenses.)
