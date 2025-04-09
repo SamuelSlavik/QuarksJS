@@ -21,7 +21,8 @@ export function Navigation({
                 <div className={`quark-navigation__logo-wrapper`}>{logo}</div>
                 <div className={`quark-navigation__content-wrapper`}>
                     <div className={'quark-navigation__content'}>{content}</div>
-                    <a className={'quark-navigation__hamburger-icon'}>MENU</a>
+                    <a className={'quark-navigation__hamburger-icon'}>
+                    </a>
                     <a className={'quark-navigation__hamburger-icon'}>CLOS</a>
                 </div>
             </div>

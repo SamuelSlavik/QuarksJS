@@ -2,7 +2,7 @@ import { Navigation } from '../Navigation';
 import { StoryObj } from '@storybook/react';
 
 const meta = {
-    title: 'Layout/Navigation',
+    title: 'layout/Navigation',
     component: Navigation,
     args: {
         logo: <div>Logo</div>,

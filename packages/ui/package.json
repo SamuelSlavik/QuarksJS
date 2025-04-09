@@ -1,7 +1,7 @@
 {
-  "name": "@quarks-js/loader",
+  "name": "@quarks-js/ui",
   "version": "1.0.0",
-  "description": "Simple Loader component for React Web Applications",
+  "description": "Simple UI components for React Web Applications",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "dist"
   ],
   "dependencies": {
-    "@quarks-js/ui": "1.0.0"
+
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
