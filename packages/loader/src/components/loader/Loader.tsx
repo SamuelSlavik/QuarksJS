@@ -6,13 +6,15 @@ export interface LoaderProps {
     type?: string;
     color?: string;
     children?: React.ReactNode;
+    className?: string;
 }
 
 export const Loader: React.FC<LoaderProps> = ({
-    loading = false,
+    loading = true,
     type = 'spinner',
     color,
     children,
+    className = '',
 }) => {
     const style: React.CSSProperties = color
         ? ({ '--color': color } as React.CSSProperties)
@@ -22,7 +24,13 @@ export const Loader: React.FC<LoaderProps> = ({
         <div>
             {loading ? (
                 <div
-                    className={'quark-loader ' + 'quark-loader--' + type}
+                    className={
+                        className +
+                        ' ' +
+                        'quark-loader ' +
+                        'quark-loader--' +
+                        type
+                    }
                     style={style}
                 ></div>
             ) : (

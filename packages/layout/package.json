@@ -1,7 +1,7 @@
 {
-  "name": "@quarks-js/loader",
-  "version": "1.0.0",
-  "description": "Simple Loader component for React Web Applications",
+  "name": "@quarks-js/layout",
+  "version": "1.0.4",
+  "description": "Layout components for building easy web apps layouts",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

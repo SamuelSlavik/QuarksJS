@@ -1,0 +1,12 @@
+.quark-container {
+    --max-width: 1200px;
+
+    margin: 0 auto;
+    max-width: var(--max-width);
+
+    position: relative;
+
+    &.quark-container--page-container {
+        min-height: 100vh;
+    }
+}
