@@ -5,9 +5,17 @@ const meta = {
     title: 'layout/Navigation',
     component: Navigation,
     args: {
-        logo: <div>Logo</div>,
-        menu: 'menu',
-        content: 'a',
+        logo: <div>QuarksJS</div>,
+        menu: [
+            <a key={1}>Link 1</a>,
+            <a key={2}>Link 2</a>,
+            <a key={3}>Link 3</a>,
+        ],
+        content: [
+            <a key={1}>Link 1</a>,
+            <a key={2}>Link 2</a>,
+            <a key={3}>Link 3</a>,
+        ],
     },
 };
 

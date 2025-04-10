@@ -1,4 +1,6 @@
 import { ReactNode, useState } from 'react';
+import { Hamburger } from '@quarks-js/ui';
+import './navigation.css';
 
 type NavigationProps = {
     className?: string;
@@ -21,11 +23,16 @@ export function Navigation({
                 <div className={`quark-navigation__logo-wrapper`}>{logo}</div>
                 <div className={`quark-navigation__content-wrapper`}>
                     <div className={'quark-navigation__content'}>{content}</div>
-                    <a className={'quark-navigation__hamburger-icon'}>
-                    </a>
-                    <a className={'quark-navigation__hamburger-icon'}>CLOS</a>
+                    <Hamburger
+                        toggle={() => setDisplayMenu(!displayMenu)}
+                        toggled={displayMenu}
+                        size={20}
+                    />
                 </div>
             </div>
+            {displayMenu && (
+                <div className={`quark-navigation__menu`}>{menu}</div>
+            )}
         </nav>
     );
 }

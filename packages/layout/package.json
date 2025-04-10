@@ -16,7 +16,7 @@
     "dist"
   ],
   "dependencies": {
-
+    "@quarks-js/ui": "1.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",

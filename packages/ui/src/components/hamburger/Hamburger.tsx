@@ -13,7 +13,7 @@ type HamburgerProps = {
 export function Hamburger({
     toggled = false,
     toggle,
-    size = 24,
+    size = 16,
     color,
     accentColor,
     className = '',
