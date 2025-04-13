@@ -28,6 +28,11 @@
                 a {
                     margin: auto;
                     cursor: pointer;
+                    color: #35495e;
+                    font-weight: bold;
+                }
+                a.active {
+                    color: #087EA4;
                 }
 
                 @media(max-width: 1200px) {

@@ -1,6 +1,7 @@
 import { ReactNode, useState } from 'react';
 import { Hamburger } from '@quarks-js/ui';
 import './navigation.css';
+import { useToggleMenu } from './useToggleMenu';
 
 type NavigationProps = {
     className?: string;
@@ -15,7 +16,7 @@ export function Navigation({
     content,
     className,
 }: NavigationProps) {
-    const [displayMenu, setDisplayMenu] = useState(false);
+    const { isOpen, toggle } = useToggleMenu();
 
     return (
         <nav className={`quark-navigation ${className}`}>
@@ -30,15 +31,11 @@ export function Navigation({
                                 : 'quark-navigation__hamburger'
                         }
                     >
-                        <Hamburger
-                            toggle={() => setDisplayMenu(!displayMenu)}
-                            toggled={displayMenu}
-                            size={20}
-                        />
+                        <Hamburger toggle={toggle} toggled={isOpen} size={20} />
                     </div>
                 </div>
             </div>
-            {displayMenu && (
+            {isOpen && (
                 <div className={`quark-navigation__menu`}>
                     {content} {menu}
                 </div>
