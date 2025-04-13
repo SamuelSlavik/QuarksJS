@@ -23,15 +23,25 @@ export function Navigation({
                 <div className={`quark-navigation__logo-wrapper`}>{logo}</div>
                 <div className={`quark-navigation__content-wrapper`}>
                     <div className={'quark-navigation__content'}>{content}</div>
-                    <Hamburger
-                        toggle={() => setDisplayMenu(!displayMenu)}
-                        toggled={displayMenu}
-                        size={20}
-                    />
+                    <div
+                        className={
+                            !menu
+                                ? 'quark-navigation__hamburger-only-responsive'
+                                : 'quark-navigation__hamburger'
+                        }
+                    >
+                        <Hamburger
+                            toggle={() => setDisplayMenu(!displayMenu)}
+                            toggled={displayMenu}
+                            size={20}
+                        />
+                    </div>
                 </div>
             </div>
             {displayMenu && (
-                <div className={`quark-navigation__menu`}>{menu}</div>
+                <div className={`quark-navigation__menu`}>
+                    {content} {menu}
+                </div>
             )}
         </nav>
     );

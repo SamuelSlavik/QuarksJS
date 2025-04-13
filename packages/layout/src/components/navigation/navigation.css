@@ -29,6 +29,17 @@
                     margin: auto;
                     cursor: pointer;
                 }
+
+                @media(max-width: 1200px) {
+                    display: none;
+                }
+            }
+
+            .quark-navigation__hamburger-only-responsive {
+                display: none;
+                @media(max-width: 1200px) {
+                    display: block;
+                }
             }
         }
     }
