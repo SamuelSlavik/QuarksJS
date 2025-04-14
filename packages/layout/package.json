@@ -1,6 +1,6 @@
 {
   "name": "@quarks-js/layout",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Layout components for building easy web apps layouts",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

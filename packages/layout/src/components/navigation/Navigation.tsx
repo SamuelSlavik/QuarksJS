@@ -36,7 +36,7 @@ export function Navigation({
                 </div>
             </div>
             {isOpen && (
-                <div className={`quark-navigation__menu`}>
+                <div className={`quark-navigation__menu`} onClick={toggle}>
                     {content} {menu}
                 </div>
             )}

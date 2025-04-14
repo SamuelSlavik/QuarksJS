@@ -7,8 +7,14 @@ export function useToggleMenu(defaultState = false) {
         setIsOpen((prev) => !prev);
     }, []);
 
-    const open = useCallback(() => setIsOpen(true), []);
-    const close = useCallback(() => setIsOpen(false), []);
+    const open = useCallback(() => {
+        setIsOpen(true);
+        console.log(isOpen)
+    }, []);
+    const close = useCallback(() => {
+        setIsOpen(false)
+        console.log(isOpen)
+    }, []);
 
     return {
         isOpen,
