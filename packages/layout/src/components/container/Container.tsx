@@ -9,7 +9,7 @@ export type ContainerProps = {
 };
 
 export function Container({
-    className,
+    className = '',
     children,
     maxWidth,
     isPageContainer,
@@ -20,7 +20,7 @@ export function Container({
 
     return (
         <div
-            className={`quark-container ${isPageContainer && 'quark-container--page-container'} ${className}`}
+            className={`quark-container ${isPageContainer ? 'quark-container--page-container' : ''} ${className}`}
             style={style}
         >
             {children}

@@ -1,7 +1,7 @@
 {
-  "name": "@quarks-js/layout",
-  "version": "1.0.13",
-  "description": "Layout components for building easy web apps layouts",
+  "name": "@quarks-js/hamburger",
+  "version": "1.0.0",
+  "description": "Simple Hamburger component for React Web Applications",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "dist"
   ],
   "dependencies": {
-    "@quarks-js/ui": "1.0.2"
+
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
@@ -25,10 +25,10 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "tslib": "^2.8.1",
     "rollup-plugin-dts": "^6.2.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "tslib": "^2.8.1",
     "typescript": "^5.8.2"
   },
   "peerDependencies": {

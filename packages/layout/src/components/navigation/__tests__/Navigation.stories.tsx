@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
 
-export const NoMenu: Story = {
+export const WithoutMenu: Story = {
     args: {
         menu: undefined,
     },

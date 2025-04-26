@@ -1,17 +1,35 @@
 import { Container } from '../../components/container/Container';
 import React from 'react';
-import './LayoutBasic';
+import './layoutBasic.css';
 
 type LayoutBasicProps = {
     children?: React.ReactNode;
     className?: string;
     isPageLayout?: boolean;
+    size?: 'small' | 'medium' | 'large';
 };
 
-export function LayoutBasic({ children, className, isPageLayout }: LayoutBasicProps) {
+export function LayoutBasic({
+    children,
+    className = '',
+    isPageLayout = false,
+    size = 'large',
+}: LayoutBasicProps) {
     return (
-        <div className={`quark-layout-basic ${className}`}>
-            <Container>{children}</Container>
+        <div
+            className={`quark-layout-basic ${isPageLayout ? 'quark-layout-basic--page-layout' : ''} ${className} `}
+        >
+            <Container
+                maxWidth={
+                    size === 'small'
+                        ? '800px'
+                        : size === 'medium'
+                          ? '1000px'
+                          : '1200px'
+                }
+            >
+                {children}
+            </Container>
         </div>
     );
 }

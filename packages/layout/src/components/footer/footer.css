@@ -1,0 +1,8 @@
+.quark-footer {
+    width: 100%;
+    border-top: 1px solid rgba(60,60,67,.12);
+    background-color: #f6f6f7;
+    padding: 2rem;
+    margin-top: auto;
+    text-align: center;
+}
