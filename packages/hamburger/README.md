@@ -3,6 +3,10 @@
 ### Quark Hamburger:
 Simple React component plugin with typescript support.
 
+Easily customizable. You can set your own preferences for size, color or accentColor.
+
+It works with its own inner state, but also supports your own state or click handler.
+
 <br/>
 
 ## Installation 
@@ -46,6 +50,18 @@ function Component() {
     )
 }
 ```
+
+<br/>
+
+## Docs 
+
+Full docs with more examples are coming soon, sorry for the inconvenience.
+
+<br/>
+
+## Support
+
+If you found this Quark useful, please support us by starring its GitHub repository.
 
 
 
