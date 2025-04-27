@@ -1,6 +1,6 @@
 {
   "name": "@quarks-js/hamburger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Hamburger component for React Web Applications",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
