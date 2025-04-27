@@ -4,15 +4,21 @@
 
 Welcome to **@quarks-js**, a growing collection of highly composable, minimalistic and tailored packages for building modern React Applications.
 
+<br/>
+
 > **You don't want to install huge UI Libraries?**
 > 
 > Our packages are designed to solve specific problem. Install only what you **really** need!
+
+<br/>
 
 ## Docs
 
 You will find short documentation within each component.
 
 Full documentation is coming soon, sorry for the inconvenience. 
+
+<br/>
 
 ## Support
 
