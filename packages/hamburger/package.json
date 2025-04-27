@@ -15,6 +15,7 @@
   "files": [
     "dist"
   ],
+  "keywords": ["quarks-js", "quarks", "quark", "react", "typescript", "hamburger", "hamburger component", "menu", "navigation", "react hamburger"],
   "dependencies": {
 
   },

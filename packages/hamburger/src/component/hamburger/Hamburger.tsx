@@ -10,6 +10,20 @@ type HamburgerProps = {
     className?: string;
 };
 
+/**
+ * Simple React component plugin with typescript support.
+ *
+ * Easily customizable. You can set your own preferences for size, color or accentColor.
+ *
+ * It works with its own inner state, but also supports your own state or click handler.
+ *
+ * @param toggled Providable state that will be referred in the component
+ * @param toggle Custom onClick handler
+ * @param size Sets size of the component in pixels, default is 16
+ * @param color Sets color of the component
+ * @param accentColor Sets color of the component on hover event
+ * @param className Custom className that will be appended to the top most container
+ */
 export function Hamburger({
     toggled = false,
     toggle,
