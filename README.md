@@ -8,7 +8,7 @@ Welcome to **@quarks-js**, a growing collection of highly composable, minimalist
 
 > **You don't want to install huge UI Libraries?**
 > 
-> Our packages are designed to solve specific problem. Install only what you **really** need!
+> Our packages are designed to solve specific problems individually. Install only what you **really** need!
 
 <br/>
 
