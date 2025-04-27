@@ -57,6 +57,8 @@ function Component() {
 
 Full docs with more examples are coming soon, sorry for the inconvenience.
 
+Source code at [GitHub Repository](https://github.com/SamuelSlavik/QuarksJS/tree/master/packages/hamburger)
+
 <br/>
 
 ## Support
