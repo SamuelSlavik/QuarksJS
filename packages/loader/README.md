@@ -1,6 +1,12 @@
 # LoaderQuark for React
 
+<br/>
+
+### Quark Loader
+
 This quark is a simple loader plugin with adaptation for React.
+
+Provides clean design and logic for usage with or without the React Suspension component.
 
 <br/>
 
@@ -13,7 +19,7 @@ npm install @quarks-js/loader --save
 <br/>
 
 ## Setup
-AnyComponent.jsx
+Install the package and use ```import``` statement in your application
 ```js
 import { Loader } from "@quarks-js/loader"
 ```
@@ -21,13 +27,16 @@ import { Loader } from "@quarks-js/loader"
 <br/>
 
 ## Basic Usage
-AnyComponent.jsx
-```jsx
-import React from "react"
-import { Loader } from "@quarks-js/loader"
 
-const AnyComponent = () => {
-  const [loading, setLoading] = React.useState(false)
+Your ```jsx|tsx``` file:
+
+```jsx
+import { Loader } from "@quarks-js/loader";
+import { useState } from "react";
+
+function Component() {
+  const [loading, setLoading] = useState(false)
+    
   //...
   
   // Perform some data loading, for example some api call
@@ -40,7 +49,7 @@ const AnyComponent = () => {
       })
       .catch(error => console.error(error))
       .finally(() => setLoading(false)) // After the data is loaded, set loading to false
-  }, [])
+  }, [...])
   
   return (
     <>
@@ -52,20 +61,18 @@ const AnyComponent = () => {
     </>
   ) 
 }
-
-export default AnyComponent
 ```
 
 <br/>
 
-[//]: # (## DOCS)
+## Docs
 
-[//]: # (Full docs at [https://www.quarksjs.com/library/loader-quark-react/getting-started]&#40;https://www.quarksjs.com/library/loader-quark-react/getting-started&#41;.)
+Full docs with more examples are coming soon, sorry for the inconvenience.
 
-[//]: # ()
-[//]: # (Source code at [https://github.com/SamuelSlavik/LoaderQuarkReact]&#40;https://github.com/SamuelSlavik/LoaderQuarkReact&#41;)
+Source code at [GitHub Repository](https://github.com/SamuelSlavik/QuarksJS/tree/master/packages/loader)
 
-[//]: # ()
-[//]: # (## SUPPORT)
+<br/>
 
-[//]: # (Please support us by starring the repository or donate at [https://www.quarksjs.com/donate]&#40;https://www.quarksjs.com/donate&#41; to help us maintain the project and cover hosting expenses.)
+## Support
+
+If you found this Quark useful, please support us by starring its GitHub repository.

@@ -33,7 +33,7 @@ import { Button } from '@quarks-js/button';
 Your ```jsx|tsx``` file:
 
 ```tsx
-import { Button } from '@quarks-js/hamburger';
+import { Button } from '@quarks-js/button';
 
 function Component() {
     const handleClick = () => {...}

@@ -1,6 +1,6 @@
 {
   "name": "@quarks-js/button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Button component for React Web Applications",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
