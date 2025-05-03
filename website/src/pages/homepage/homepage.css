@@ -1,7 +1,23 @@
 .homepage {
-    h1 {
+    .homepage__headline {
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #39516a;
+            margin-bottom: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .homepage__buttons {
         width: 100%;
-        text-align: center;
-        font-size: 3.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
     }
 }
