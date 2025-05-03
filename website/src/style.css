@@ -1,0 +1,10 @@
+@import './styles/variables.css';
+
+@import './styles/default.css';
+
+@import './styles/main.css';
+
+/* PAGES */
+@import './pages/homepage/homepage.css';
+
+/* COMPONENTS */

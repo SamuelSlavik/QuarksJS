@@ -1,5 +1,7 @@
 # @quarks-js/hamburger
 
+<br/>
+
 ### Quark Hamburger:
 Simple React component plugin with typescript support.
 
