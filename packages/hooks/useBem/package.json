@@ -1,0 +1,39 @@
+{
+  "name": "@quarks-js/use-bem",
+  "version": "1.0.1",
+  "description": "Hook that helps you create and mange BEM classnames for clean code",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "release": "npm publish --access public",
+    "link": "npm link"
+  },
+  "author": "Samuel Slávik",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "keywords": ["quarks-js", "quarks", "quark", "react", "typescript", "button", "button component", "buttons", "link", "react button"],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tslib": "^2.8.1",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^19.0.0 || ^17.0.0 || ^18.0.0"
+  }
+}

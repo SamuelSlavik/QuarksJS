@@ -1,4 +1,7 @@
+import { Button } from '@quarks-js/button';
 import { LayoutBasic } from '@quarks-js/layout';
+import { useNavigate } from 'react-router';
+import { Hr } from '@quarks-js/hr';
 
 export function Homepage() {
     // useEffect(() => {
@@ -6,6 +9,8 @@ export function Homepage() {
     //         .then((res) => res.text())
     //         .then((text) => setMarkdown(text));
     // }, []);
+
+    const navigate = useNavigate();
 
     return (
         <LayoutBasic className={'homepage'}>
@@ -20,7 +25,18 @@ export function Homepage() {
                     our easy to use and highly customizable components!
                 </p>
             </div>
+            <br />
             <div className={'homepage__buttons'}>
+                <Button onClick={() => navigate('/docs')} accent>
+                    See the Docs
+                </Button>
+                <Button onClick={() => navigate('/project')}>
+                    Know the Project
+                </Button>
+                <Button onClick={() => navigate('/donate')}>Donate</Button>
+            </div>
+            <Hr />
+            <div className={'homepage__columns'}>
 
             </div>
         </LayoutBasic>
