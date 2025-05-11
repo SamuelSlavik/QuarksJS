@@ -1,6 +1,6 @@
 {
   "name": "@quarks-js/use-bem",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Hook that helps you create and mange BEM classnames for clean code",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,7 +15,7 @@
   "files": [
     "dist"
   ],
-  "keywords": ["quarks-js", "quarks", "quark", "react", "typescript", "button", "button component", "buttons", "link", "react button"],
+  "keywords": ["quarks-js", "quarks", "quark", "react", "typescript", "hook", "hooks"],
   "dependencies": {
 
   },
